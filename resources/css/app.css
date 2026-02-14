@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* Campagne kleuren: marine blauw + groen accent + wit */
+    --color-marine: #0c2340;
+    --color-marine-dark: #061a2d;
+    --color-marine-light: #143b5c;
+    --color-accent: #10b981;
+    --color-accent-light: #34d399;
+    --color-accent-dark: #059669;
+    --font-sans: 'Inter', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scroll-triggered fade-in */
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slow-zoom {
+    from { transform: scale(1.05); }
+    to { transform: scale(1.1); }
+}
+.animate-slow-zoom {
+    animation: slow-zoom 25s ease-in-out infinite alternate;
+}
+
+/* Countdown timer */
+.countdown-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 4.5rem;
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media (min-width: 768px) {
+    .countdown-box { min-width: 5.5rem; }
+}
+.countdown-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    font-variant-numeric: tabular-nums;
+}
+@media (min-width: 768px) {
+    .countdown-number { font-size: 2.25rem; }
+}
+.countdown-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+@media (min-width: 768px) {
+    .countdown-label { font-size: 0.875rem; }
+}
+
+/* Donatie: dropdown bedrag leesbaar (donkere achtergrond, witte tekst) */
+.donation-amount-select,
+.donation-amount-select option {
+    background-color: var(--color-marine-light);
+    color: #fff;
+}
+.donation-amount-select:focus {
+    outline: none;
+}

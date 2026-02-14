@@ -1,0 +1,36 @@
+@props([
+    'title',
+    'subtitle' => null,
+    'image' => 'https://images.unsplash.com/photo-1540914129891-4b0c2c4e2c8e?w=1920&q=80',
+    'ctaText' => null,
+    'ctaUrl' => null,
+])
+
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+        <div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
+    </div>
+    <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 text-center py-20 md:py-28">
+        <div class="h-1 w-20 bg-accent mx-auto mb-6 rounded-full"></div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight uppercase drop-shadow-lg">
+            {{ $title }}
+        </h1>
+        @if($subtitle)
+            <p class="mt-5 text-xl md:text-2xl text-white/95 font-medium max-w-2xl mx-auto drop-shadow-md">
+                {{ $subtitle }}
+            </p>
+        @endif
+        @if(isset($countdown))
+            <div class="mt-10 md:mt-12">
+                {!! $countdown !!}
+            </div>
+        @endif
+        @if($ctaText && $ctaUrl)
+            <a href="{{ $ctaUrl }}" class="inline-block mt-8 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-accent/30 hover:scale-105">
+                {{ $ctaText }}
+            </a>
+        @endif
+        <div class="h-1 w-20 bg-accent mx-auto mt-8 rounded-full"></div>
+    </div>
+</section>
