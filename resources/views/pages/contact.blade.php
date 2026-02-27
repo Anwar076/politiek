@@ -1,11 +1,18 @@
 <x-app-layout :metaTitle="$metaTitle" :metaDescription="$metaDescription">
     <x-hero-section
         title="Contact"
-        subtitle="We horen graag van je"
-        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
+        subtitle="Neem contact op met Samen Barendrecht"
     />
 
-    <section class="py-16 md:py-24">
+    <section class="py-8 md:py-10">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <p class="text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
+                Heeft u een vraag, suggestie of wilt u iets delen? Wij horen graag van u.
+            </p>
+        </div>
+    </section>
+
+    <section class="pb-16 md:pb-24">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             @if(session('success'))
                 <div class="mb-8 p-5 rounded-2xl bg-accent/20 border border-accent/50 text-white flex items-center gap-3">
@@ -65,28 +72,32 @@
                     </form>
                 </div>
 
-                {{-- Contactinfo + afbeelding --}}
+                {{-- Contactinfo + socials + pers --}}
                 <div class="flex flex-col gap-6">
-                    <div class="relative rounded-2xl overflow-hidden border border-white/10 flex-shrink-0">
-                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="Contact" class="w-full aspect-[4/3] object-cover">
-                        <div class="absolute bottom-0 right-0 w-28 h-28 bg-accent/90 rounded-tl-full"></div>
-                        <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-marine/90 backdrop-blur text-white text-sm">
-                            We reageren zo snel mogelijk, meestal binnen twee werkdagen.
-                        </div>
-                    </div>
                     <div class="rounded-2xl p-6 md:p-8 bg-marine-light/40 border border-white/10 flex-grow">
-                        <span class="text-accent font-semibold text-sm uppercase tracking-wider">Contactgegevens</span>
+                        <span class="text-accent font-semibold text-sm uppercase tracking-wider">Neem contact op</span>
                         <h3 class="mt-2 text-xl font-bold text-white mb-6">Bereik ons</h3>
                         <div class="space-y-5">
-                            <a href="mailto:info@lijst8.nl" class="flex items-start gap-4 group">
-                                <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent/40 transition-colors">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                                 </div>
                                 <div>
                                     <p class="text-white/70 text-sm">E-mail</p>
-                                    <p class="text-accent font-semibold group-hover:text-accent-light transition-colors">info@lijst8.nl</p>
+                                    <a href="mailto:info@samenvoorbarendrecht.nl" class="text-accent font-semibold group-hover:text-accent-light transition-colors">
+                                        info@samenvoorbarendrecht.nl
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l2 10h11l2-6H9"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 19a2 2 0 11-4 0 2 2 0 014 0zM9 19a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-white/70 text-sm">Telefoon</p>
+                                    <p class="text-white font-medium">[nummer invullen]</p>
+                                </div>
+                            </div>
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -97,9 +108,26 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-6 pt-6 border-t border-white/10 text-white/70 text-sm">
-                            Voor pers en samenwerking: neem ook gerust contact op via bovenstaand e-mailadres.
-                        </p>
+
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-3">Volg ons</p>
+                            <ul class="space-y-2 text-white/85 text-sm">
+                                <li>Instagram: <span class="text-accent">@samenbarendrecht</span></li>
+                                <li>Facebook: <span class="text-accent">Samen Barendrecht</span></li>
+                                <li>X (Twitter): <span class="text-accent">@SamenBDrecht</span></li>
+                                <li>LinkedIn: <span class="text-accent">Samen Barendrecht</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-2">Pers &amp; media</p>
+                            <p class="text-white/85 text-sm leading-relaxed">
+                                Voor persverzoeken, interviews of achtergrondinformatie kunt u contact opnemen met
+                                <span class="font-semibold">Cihat Demir</span>, lijsttrekker, via
+                                <a href="mailto:info@samenvoorbarendrecht.nl" class="text-accent hover:text-accent-light">info@samenvoorbarendrecht.nl</a>.
+                                Een perskit met logo, foto’s en standpunten is beschikbaar op aanvraag.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

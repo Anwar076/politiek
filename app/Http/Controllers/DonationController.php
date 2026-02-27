@@ -14,8 +14,8 @@ class DonationController extends Controller
     public function index(): View
     {
         return view('donate', [
-            'metaTitle' => 'Steun ons',
-            'metaDescription' => 'Steun de campagne van Lijst 8 met een donatie.',
+            'metaTitle' => 'Steun Samen Barendrecht — Doneer of word vrijwilliger',
+            'metaDescription' => 'Help Samen Barendrecht: doneer aan de campagne, word vrijwilliger of bestel campagnemateriaal. Elke bijdrage telt.',
         ]);
     }
 
@@ -67,7 +67,7 @@ class DonationController extends Controller
                     'currency' => 'EUR',
                     'value' => $amountValue,
                 ],
-                'description' => 'Donatie Lijst 8 – € ' . $amountValue,
+                'description' => 'Donatie Samen Barendrecht – € ' . $amountValue,
                 'redirectUrl' => $redirectUrl,
                 'webhookUrl' => $webhookUrl,
                 'metadata' => [

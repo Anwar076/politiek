@@ -3,9 +3,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $title }} | CMS Lijst 8</title>
+    <title>{{ $title }} | Samen Barendrecht CMS</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         [x-cloak] { display: none !important; }
@@ -15,7 +15,7 @@
     <div class="flex min-h-screen">
         <aside class="w-56 bg-marine-dark border-r border-white/10 flex flex-col">
             <div class="p-4 border-b border-white/10">
-                <a href="{{ route('admin.dashboard') }}" class="font-bold">Lijst 8 CMS</a>
+                <a href="{{ route('admin.dashboard') }}" class="font-bold">Samen Barendrecht CMS</a>
             </div>
             <nav class="p-4 space-y-1">
                 <a href="{{ route('admin.dashboard') }}" class="block py-2 text-white/80 hover:text-accent">Dashboard</a>

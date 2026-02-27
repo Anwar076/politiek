@@ -25,6 +25,9 @@ Route::get('/nieuws/{slug}', [PostController::class, 'show'])->name('news.show')
 Route::get('/agenda', [EventController::class, 'index'])->name('agenda.index');
 Route::get('/agenda/{slug}', [EventController::class, 'show'])->name('agenda.show');
 Route::get('/over-ons', [PageController::class, 'about'])->name('about');
+Route::get('/standpunten', [PageController::class, 'standpunten'])->name('standpunten');
+Route::get('/programma', [PageController::class, 'programma'])->name('programma');
+Route::get('/kandidaten', [PageController::class, 'kandidaten'])->name('kandidaten');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/steun-ons', [DonationController::class, 'index'])->name('donate');

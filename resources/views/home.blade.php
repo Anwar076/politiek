@@ -1,13 +1,13 @@
-<x-app-layout metaTitle="Samen voor Barendrecht" metaDescription="Lijst 8 – Gemeenteraadsverkiezingen 2026. Daadkrachtig, verbindend en rechtvaardig. Ontdek onze plannen voor Barendrecht.">
+<x-app-layout metaTitle="Samen Barendrecht — Daadkrachtig • Rechtszekerheid • Verbindend" metaDescription="Samen Barendrecht: de lokale partij voor eerlijk bestuur, rechtszekerheid en meetbare resultaten. Stem 18 maart 2026.">
     @php
         $heroImage = 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1920&q=80';
     @endphp
     <x-hero-section
-        title="Samen voor Barendrecht"
-        subtitle="Gemeenteraadsverkiezingen 2026 — Daadkrachtig • Verbindend • Rechtvaardig"
+        title="Barendrecht verdient eerlijk bestuur."
+        subtitle="Daadkrachtig. Rechtszekerheid. Verbindend."
         :image="$heroImage"
-        ctaText="Bekijk ons nieuws"
-        ctaUrl="{{ route('news.index') }}"
+        ctaText="Bekijk onze standpunten"
+        ctaUrl="{{ route('standpunten') }}"
     >
         <x-slot:countdown>
             <p class="text-white/90 text-sm md:text-base font-medium mb-4">Nog tot de verkiezingen</p>
@@ -33,7 +33,147 @@
         </x-slot:countdown>
     </x-hero-section>
 
-    {{-- Campagne in beeld: 3 speelse afbeeldingen --}}
+    {{-- Intro onder de hero --}}
+    <section class="py-8 md:py-10">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl">
+                <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                    Samen Barendrecht is de nieuwe politieke partij die staat voor een gemeente die haar beloftes nakomt,
+                    u als inwoner serieus neemt en uw rechten beschermt. Geen holle woorden — meetbare resultaten.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {{-- 48-uurgarantie --}}
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="rounded-2xl bg-[#EBF5FB] text-marine border border-accent/40 px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <div class="flex-shrink-0">
+                    <div class="w-16 h-16 rounded-full bg-accent/10 border border-accent/40 flex items-center justify-center">
+                        <svg class="w-9 h-9 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v4l3 3m4-3a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold tracking-wider uppercase text-accent">Onze 48-uurgarantie</p>
+                    <h2 class="mt-2 text-2xl md:text-3xl font-extrabold text-marine">Binnen 48 uur een inhoudelijke reactie</h2>
+                    <p class="mt-3 text-marine/90 text-sm md:text-base leading-relaxed">
+                        Doet u een melding of klacht bij de gemeente? Dan ontvangt u binnen 48 uur geen standaard ontvangstbevestiging,
+                        maar een inhoudelijke reactie: de status van uw melding, het verwachte tijdspad en een contactpersoon.
+                    </p>
+                    <p class="mt-3 text-marine/80 text-sm md:text-base leading-relaxed">
+                        Dat is wat wij bedoelen met rechtszekerheid. Niet meer beloven dan je kunt waarmaken — maar wat je belooft, ook dóen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Waar u ons op mag afrekenen --}}
+    <section class="py-12 md:py-16 bg-marine-light/20">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 md:mb-12">
+                <p class="text-accent font-semibold text-sm uppercase tracking-wider">Vijf beloftes</p>
+                <h2 class="mt-2 text-2xl md:text-3xl font-extrabold">Waar u ons op mag afrekenen</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="rounded-2xl bg-marine-light/40 border border-white/10 p-6 flex flex-col h-full">
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider">Belofte 1</span>
+                    <h3 class="mt-2 text-lg font-bold text-white">48-uurgarantie</h3>
+                    <p class="mt-2 text-white/80 text-sm leading-relaxed">
+                        Elke melding binnen 48 uur inhoudelijk beantwoord met status, planning en een vaste contactpersoon.
+                    </p>
+                </div>
+                <div class="rounded-2xl bg-marine-light/40 border border-white/10 p-6 flex flex-col h-full">
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider">Belofte 2</span>
+                    <h3 class="mt-2 text-lg font-bold text-white">Rechtszekerheid</h3>
+                    <p class="mt-2 text-white/80 text-sm leading-relaxed">
+                        De gemeente wijzigt geen regels halverwege een lopend vergunnings- of bezwaartraject.
+                    </p>
+                </div>
+                <div class="rounded-2xl bg-marine-light/40 border border-white/10 p-6 flex flex-col h-full">
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider">Belofte 3</span>
+                    <h3 class="mt-2 text-lg font-bold text-white">Geen kaalslag buitenruimte</h3>
+                    <p class="mt-2 text-white/80 text-sm leading-relaxed">
+                        We bezuinigen niet op onderhoud van straten, groen en verlichting.
+                    </p>
+                </div>
+                <div class="rounded-2xl bg-marine-light/40 border border-white/10 p-6 flex flex-col h-full">
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider">Belofte 4</span>
+                    <h3 class="mt-2 text-lg font-bold text-white">Woonvoorrang</h3>
+                    <p class="mt-2 text-white/80 text-sm leading-relaxed">
+                        Minimaal 30% nieuwbouw toegewezen aan Barendrechtse starters en mensen met lokale binding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Oproep tot actie --}}
+    <section class="py-16 md:py-20 bg-marine-light/30">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="rounded-2xl bg-marine-light/60 border border-white/10 px-6 py-10 md:px-10 md:py-12 text-center md:text-left">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white">Doe mee met Samen Barendrecht</h2>
+                    <p class="mt-3 text-white/80 text-sm md:text-base leading-relaxed">
+                        Barendrecht verdient een gemeente die luistert, uitlegt en levert. Help ons dat waar te maken.
+                    </p>
+                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+                        <a href="{{ route('volunteer') }}" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-6 py-3 rounded-lg text-sm md:text-base transition-colors">
+                            Word vrijwilliger
+                        </a>
+                        <a href="{{ route('donate') }}" class="inline-flex items-center justify-center gap-2 border border-accent text-accent hover:bg-accent hover:text-marine font-bold px-6 py-3 rounded-lg text-sm md:text-base transition-colors">
+                            Doneer aan de campagne
+                        </a>
+                        <a href="{{ route('programma') }}" class="inline-flex items-center justify-center gap-2 text-accent hover:text-accent-light font-bold px-6 py-3 rounded-lg text-sm md:text-base transition-colors">
+                            Download het programma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Thema's snelnavigatie --}}
+    <section class="py-16 md:py-20">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 md:mb-12">
+                <p class="text-accent font-semibold text-sm uppercase tracking-wider">Onze standpunten</p>
+                <h2 class="mt-2 text-2xl md:text-3xl font-extrabold">Klik op een thema om meer te lezen</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                @php
+                    $themas = [
+                        ['label' => 'Wonen & Doorstroming', 'anchor' => 'wonen'],
+                        ['label' => 'Jongeren & Sport', 'anchor' => 'jongeren'],
+                        ['label' => 'Eerlijk Bestuur & Rechtszekerheid', 'anchor' => 'bestuur'],
+                        ['label' => 'Buitenruimte, Riolering & Afval', 'anchor' => 'buitenruimte'],
+                        ['label' => 'Veiligheid & Verkeer', 'anchor' => 'veiligheid'],
+                        ['label' => 'Financiën & Lokale Lasten', 'anchor' => 'financien'],
+                        ['label' => 'Gezond Ondernemersklimaat', 'anchor' => 'ondernemen'],
+                        ['label' => 'Zorg & Welzijn', 'anchor' => 'zorg'],
+                        ['label' => 'Regionale Samenwerking', 'anchor' => 'regio'],
+                        ['label' => 'Communicatie & Burgerparticipatie', 'anchor' => 'communicatie'],
+                    ];
+                @endphp
+                @foreach($themas as $thema)
+                    <a href="{{ route('standpunten') }}#{{ $thema['anchor'] }}"
+                       class="group rounded-2xl border border-white/10 bg-marine-light/30 hover:border-accent/40 hover:bg-marine-light/50 transition-all duration-200 p-4 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center text-accent flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white font-medium group-hover:text-accent transition-colors text-sm md:text-base">{{ $thema['label'] }}</span>
+                    </a>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    {{-- Campagne in beeld: 3 speelse afbeeldingen (optioneel laten staan als visuele sfeer) --}}
     <section class="py-12 md:py-16">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <p class="text-center text-accent font-semibold text-sm uppercase tracking-wider mb-8">Campagne in beeld</p>
@@ -95,7 +235,7 @@
         </div>
     </section>
 
-    {{-- Waarom Lijst 8: 3 blokken met afbeeldingen --}}
+    {{-- Waarom Samen Barendrecht: 3 blokken met afbeeldingen --}}
     <section class="py-20 md:py-28 relative bg-marine-light/20 overflow-hidden">
         <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">

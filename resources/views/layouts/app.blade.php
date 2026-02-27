@@ -1,11 +1,11 @@
-@props(['metaTitle' => 'Samen voor Barendrecht', 'metaDescription' => 'Daadkrachtig, verbindend en rechtvaardig. Ontdek onze plannen voor Barendrecht.'])
+@props(['metaTitle' => 'Samen Barendrecht', 'metaDescription' => 'Samen Barendrecht: de lokale partij voor eerlijk bestuur, rechtszekerheid en meetbare resultaten.'])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $metaTitle }} | Lijst 8</title>
+    <title>{{ $metaTitle }} | Samen Barendrecht</title>
     <meta name="description" content="{{ $metaDescription }}">
     <link rel="canonical" href="{{ url()->current() }}">
     @stack('meta')

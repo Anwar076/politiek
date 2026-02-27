@@ -14,8 +14,8 @@ class PostController extends Controller
 
         return view('news.index', [
             'posts' => $posts,
-            'metaTitle' => 'Nieuws',
-            'metaDescription' => 'Het laatste nieuws van Lijst 8 Barendrecht.',
+            'metaTitle' => 'Nieuws — Samen Barendrecht',
+            'metaDescription' => 'Het laatste nieuws van Samen Barendrecht: campagne-updates, standpunten, persberichten en reacties op lokale ontwikkelingen.',
         ]);
     }
 

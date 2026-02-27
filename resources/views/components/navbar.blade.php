@@ -2,13 +2,15 @@
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between h-16 md:h-20">
             <a href="{{ route('home') }}" class="flex items-center gap-2 group">
-                <span class="bg-white text-marine font-bold text-sm px-3 py-1.5 rounded">LIJST</span>
-                <span class="text-2xl md:text-3xl font-extrabold tracking-tight">8</span>
+                <span class="bg-white text-marine font-extrabold text-sm px-3 py-1.5 rounded">SAMEN</span>
+                <span class="text-xl md:text-2xl font-extrabold tracking-tight">BARENDRECHT</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
                 <a href="{{ route('home') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Home</a>
+                <a href="{{ route('standpunten') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Standpunten</a>
+                <a href="{{ route('programma') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Programma</a>
+                <a href="{{ route('kandidaten') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Kandidaten</a>
                 <a href="{{ route('news.index') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Nieuws</a>
-                <a href="{{ route('agenda.index') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Agenda</a>
                 <a href="{{ route('about') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Over ons</a>
                 <a href="{{ route('contact') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Contact</a>
                 <a href="{{ route('donate') }}" class="bg-accent hover:bg-accent-light text-marine font-bold px-5 py-2.5 rounded-lg transition-colors">Steun ons</a>

@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $admin = User::factory()->admin()->create([
             'name' => 'Admin',
-            'email' => 'admin@lijst8.nl',
+            'email' => 'admin@samenvoorbarendrecht.nl',
             'password' => bcrypt('password'),
         ]);
 

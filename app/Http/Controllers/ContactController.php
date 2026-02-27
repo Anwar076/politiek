@@ -11,8 +11,8 @@ class ContactController extends Controller
     public function index(): View
     {
         return view('pages.contact', [
-            'metaTitle' => 'Contact',
-            'metaDescription' => 'Neem contact met ons op.',
+            'metaTitle' => 'Contact — Samen Barendrecht',
+            'metaDescription' => 'Neem contact op met Samen Barendrecht. Stel een vraag, deel uw zorgen of sluit u aan.',
         ]);
     }
 
@@ -26,7 +26,7 @@ class ContactController extends Controller
         ]);
 
         // In production: send mail or store in database
-        // Mail::to('info@lijst8.nl')->send(new ContactMessage($validated));
+        // Mail::to('info@samenvoorbarendrecht.nl')->send(new ContactMessage($validated));
 
         return redirect()->route('contact')->with('success', 'Je bericht is verzonden. We reageren zo snel mogelijk.');
     }

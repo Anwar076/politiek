@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Inloggen | CMS Lijst 8</title>
+    <title>Inloggen | Samen Barendrecht CMS</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-marine min-h-screen flex items-center justify-center font-sans text-white">
     <div class="w-full max-w-md px-6">
         <div class="text-center mb-8">
-            <span class="bg-white text-marine font-bold text-sm px-3 py-1.5 rounded">LIJST</span>
-            <span class="text-2xl font-extrabold ml-1">8</span>
-            <p class="mt-2 text-white/70">Beheer</p>
+            <p class="text-xl font-bold text-white">Samen Barendrecht</p>
+            <p class="mt-1 text-white/60 text-sm">CMS – Beheer</p>
         </div>
         <div class="bg-marine-light/50 border border-white/10 rounded-xl p-8">
             <h1 class="text-xl font-bold mb-6">Inloggen</h1>

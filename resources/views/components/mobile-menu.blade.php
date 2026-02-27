@@ -21,6 +21,9 @@
             </svg>
         </button>
         <a href="{{ route('home') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Home</a>
+        <a href="{{ route('standpunten') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Standpunten</a>
+        <a href="{{ route('programma') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Programma</a>
+        <a href="{{ route('kandidaten') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Kandidaten</a>
         <a href="{{ route('news.index') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Nieuws</a>
         <a href="{{ route('agenda.index') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Agenda</a>
         <a href="{{ route('about') }}" @click="open = false" class="text-xl font-bold text-white hover:text-accent transition-colors">Over ons</a>
