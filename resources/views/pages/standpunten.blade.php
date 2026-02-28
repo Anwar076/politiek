@@ -63,7 +63,7 @@
                             <div class="flex-1 min-w-0">
                                 <h2 class="text-xl md:text-2xl font-extrabold text-white">{{ $theme['num'] }}. {{ $theme['title'] }}</h2>
                                 <p class="mt-3 text-white/80 text-sm md:text-base leading-relaxed">
-                                    {{ $theme['intro'] }}
+                                    {!! str_replace('—', '<span class="text-em-dash">—</span>', e($theme['intro'])) !!}
                                 </p>
                                 @if(!empty($theme['items']))
                                     <div class="mt-5">
@@ -72,7 +72,7 @@
                                             @foreach($theme['items'] as $item)
                                                 <li class="flex items-start gap-2">
                                                     <span class="text-accent mt-1.5 flex-shrink-0">•</span>
-                                                    <span>{{ $item }}</span>
+                                                    <span>{!! str_replace('—', '<span class="text-em-dash">—</span>', e($item)) !!}</span>
                                                 </li>
                                             @endforeach
                                         </ul>

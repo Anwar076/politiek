@@ -62,7 +62,7 @@
                             </p>
                             <p class="mt-2">
                                 Bewoners van de dorpskern ervaren bij elke hevige regenbui wateroverlast in hun woningen.
-                                Het gresriool — dat 25% van het vuilwaterriool uitmaakt — nadert het einde van zijn levensduur.
+                                Het gresriool <span class="text-em-dash">—</span> dat 25% van het vuilwaterriool uitmaakt <span class="text-em-dash">—</span> nadert het einde van zijn levensduur.
                             </p>
                             <p class="mt-2 text-white/80 italic">
                                 “Dit uitstellen kost meer dan het nu oplossen,” stelt Aoulad Ben Saddik.
@@ -77,7 +77,7 @@
                             <p class="mt-2">
                                 De gemeenteraad heeft ingestemd met de begroting voor 2026. Samen Barendrecht maakt zich zorgen
                                 over de financiële houdbaarheid. Structurele uitgaven worden gefinancierd uit incidentele meevallers
-                                — dat is geen houdbaar beleid.
+                                <span class="text-em-dash">—</span> dat is geen houdbaar beleid.
                             </p>
                             <p class="mt-2">
                                 Wij pleiten voor realistische financiering en kwartaalrapportages zodat inwoners kunnen meekijken.

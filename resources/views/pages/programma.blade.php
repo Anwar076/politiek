@@ -23,7 +23,7 @@
     </section>
 
     {{-- 10 meetbare doelen --}}
-    <section class="py-10 md:py-14 border-t border-white/10">
+    <!-- <section class="py-10 md:py-14 border-t border-white/10">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <h2 class="text-xl md:text-2xl font-extrabold text-white">Samenvatting: 10 meetbare doelen</h2>
             <p class="mt-2 text-white/80 text-sm md:text-base">
@@ -51,7 +51,7 @@
                 @endforeach
             </ul>
         </div>
-    </section>
+    </section> -->
 
     {{-- Onze positie op gevoelige dossiers --}}
     <section class="py-12 md:py-16 border-t border-white/10">

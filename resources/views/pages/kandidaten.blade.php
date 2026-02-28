@@ -10,12 +10,12 @@
             <h2 class="text-xl md:text-2xl font-extrabold text-white">Ons team</h2>
             <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
                 Samen Barendrecht wordt gedragen door betrokken Barendrechters met diverse achtergronden.
-                Wij zijn geen beroepspolitici — wij zijn uw buren, collega’s en medeouders op het schoolplein.
+                Wij zijn geen beroepspolitici <span class="text-em-dash">—</span> wij zijn uw buren, collega’s en medeouders op het schoolplein.
             </p>
         </div>
     </section>
 
-    {{-- Lijsttrekker --}}
+    {{-- Lijsttrekker: Cihat Demir --}}
     <section class="py-6 md:py-8">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <article class="rounded-2xl border border-accent/30 bg-marine-light/40 overflow-hidden">
@@ -26,11 +26,11 @@
                         </div>
                         <div class="flex-1 min-w-0">
                             <p class="text-sm uppercase tracking-wider text-accent font-semibold">Lijsttrekker</p>
-                            <p class="text-white/60 text-sm mt-1">Naam, foto en achtergrond volgen zodra de kandidatenlijst is vastgesteld.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-white mt-1">Demir, C. (Cihat)</h3>
                             <blockquote class="mt-6 pl-0 md:pl-4 border-l-0 md:border-l-4 border-accent/50">
                                 <p class="text-white/90 text-base md:text-lg leading-relaxed italic">
                                     “Ik wil dat de gemeente doet wat zij belooft. Dat inwoners weten waar ze aan toe zijn. En dat
-                                    iedereen — ongeacht achtergrond — gelijk wordt behandeld. Dat is geen idealisme, dat is goed
+                                    iedereen <span class="text-em-dash">—</span> ongeacht achtergrond <span class="text-em-dash">—</span> gelijk wordt behandeld. Dat is geen idealisme, dat is goed
                                     bestuur.”
                                 </p>
                             </blockquote>
@@ -41,23 +41,26 @@
         </div>
     </section>
 
-    {{-- Overige kandidaten 2–7 --}}
+    {{-- Kandidaten 2–7 --}}
     <section class="py-8 md:py-12 border-t border-white/10">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <div class="rounded-2xl border border-white/10 bg-marine-light/25 p-6 md:p-8">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white/80 font-bold text-sm">2–7</span>
-                    <h2 class="text-lg md:text-xl font-extrabold text-white">Overige kandidaten</h2>
-                </div>
-                <p class="text-white/80 text-sm md:text-base leading-relaxed mb-6">
-                    De kandidatenlijst wordt aangevuld zodra deze definitief is vastgesteld.
-                </p>
-                <div class="rounded-xl bg-marine-light/40 border border-white/10 border-dashed p-5 text-white/70 text-sm md:text-base leading-relaxed">
-                    <p class="font-semibold text-white/90 mb-2">Voorbeeld invulling:</p>
-                    <p>[Naam] — Nr. [X]</p>
-                    <p class="mt-1">[Beroep/achtergrond]. Woont in [wijk].</p>
-                    <p class="mt-2 italic">“[Persoonlijke motivatie in 1–2 zinnen, liefst met lokale connectie.]”</p>
-                </div>
+            <h2 class="text-lg md:text-xl font-extrabold text-white mb-6">Overige kandidaten</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                @foreach([
+                    ['nr' => 2, 'naam' => 'Pereira, E. (Elvis)'],
+                    ['nr' => 3, 'naam' => 'Hooimeijer, D.C. (Daan)'],
+                    ['nr' => 4, 'naam' => 'Baddou, K. (Karima)'],
+                    ['nr' => 5, 'naam' => 'Adbaili, R. (Rachid)'],
+                    ['nr' => 6, 'naam' => 'Datadin, S.B. (Simrah)'],
+                    ['nr' => 7, 'naam' => 'Kassrioui, K. (Khalid)'],
+                ] as $kandidaat)
+                    <div class="rounded-xl border border-white/10 bg-marine-light/30 p-4 flex items-center gap-4 hover:border-accent/30 transition-colors">
+                        <span class="w-10 h-10 rounded-lg bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold text-sm flex-shrink-0">
+                            {{ $kandidaat['nr'] }}
+                        </span>
+                        <p class="text-white font-medium">{{ $kandidaat['naam'] }}</p>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

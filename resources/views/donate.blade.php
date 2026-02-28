@@ -8,8 +8,8 @@
     <section class="py-8 md:py-10">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <p class="text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
-                Wij zijn een nieuwe partij zonder grote pot geld. Elke bijdrage — groot of klein, financieel of als
-                vrijwilliger — helpt ons om Barendrecht eerlijker te maken.
+                Wij zijn een nieuwe partij zonder grote pot geld. Elke bijdrage <span class="text-em-dash">—</span> groot of klein, financieel of als
+                    vrijwilliger <span class="text-em-dash">—</span> helpt ons om Barendrecht eerlijker te maken.
             </p>
         </div>
     </section>
@@ -28,7 +28,7 @@
             @endif
 
             {{-- Doneren --}}
-            <div class="rounded-2xl border border-white/10 bg-marine-light/30 overflow-hidden mb-10 md:mb-12">
+            <!-- <div class="rounded-2xl border border-white/10 bg-marine-light/30 overflow-hidden mb-10 md:mb-12">
                 <div class="p-6 md:p-8">
                     <h2 class="text-xl md:text-2xl font-extrabold text-white">Doneer aan de campagne</h2>
                     <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
@@ -51,14 +51,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             {{-- Vrijwilligers --}}
             <div class="rounded-2xl border border-white/10 bg-marine-light/25 overflow-hidden mb-10 md:mb-12">
                 <div class="p-6 md:p-8">
                     <h2 class="text-xl md:text-2xl font-extrabold text-white">Word vrijwilliger</h2>
                     <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed">
-                        Wij zoeken mensen die mee willen helpen. Geen ervaring nodig — alleen motivatie.
+                        Wij zoeken mensen die mee willen helpen. Geen ervaring nodig <span class="text-em-dash">—</span> alleen motivatie.
                     </p>
                     <ul class="mt-5 space-y-2 text-white/85 text-sm md:text-base">
                         <li class="flex items-start gap-2"><span class="text-accent">•</span> Flyeren in uw eigen wijk</li>
@@ -77,7 +77,7 @@
             </div>
 
             {{-- Campagnemateriaal --}}
-            <div class="rounded-2xl border border-white/10 bg-marine-light/25 overflow-hidden">
+            <!-- <div class="rounded-2xl border border-white/10 bg-marine-light/25 overflow-hidden">
                 <div class="p-6 md:p-8">
                     <h2 class="text-xl md:text-2xl font-extrabold text-white">Campagnemateriaal</h2>
                     <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed">
@@ -95,7 +95,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

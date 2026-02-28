@@ -89,7 +89,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4">
+                            <!-- <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l2 10h11l2-6H9"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 19a2 2 0 11-4 0 2 2 0 014 0zM9 19a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                                 </div>
@@ -97,8 +97,8 @@
                                     <p class="text-white/70 text-sm">Telefoon</p>
                                     <p class="text-white font-medium">[nummer invullen]</p>
                                 </div>
-                            </div>
-                            <div class="flex items-start gap-4">
+                            </div> -->
+                            <!-- <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-accent/25 flex items-center justify-center text-accent flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                                 </div>
@@ -106,16 +106,16 @@
                                     <p class="text-white/70 text-sm">Locatie</p>
                                     <p class="text-white font-medium">Barendrecht</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="mt-8 pt-6 border-t border-white/10">
                             <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-3">Volg ons</p>
                             <ul class="space-y-2 text-white/85 text-sm">
-                                <li>Instagram: <span class="text-accent">@samenbarendrecht</span></li>
-                                <li>Facebook: <span class="text-accent">Samen Barendrecht</span></li>
+                                <li>Instagram: <a href="https://instagram.com/samenvoorbarendrecht" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">@samenvoorbarendrecht</a></li>
+                                <!-- <li>Facebook: <span class="text-accent">Samen Barendrecht</span></li>
                                 <li>X (Twitter): <span class="text-accent">@SamenBDrecht</span></li>
-                                <li>LinkedIn: <span class="text-accent">Samen Barendrecht</span></li>
+                                <li>LinkedIn: <span class="text-accent">Samen Barendrecht</span></li> -->
                             </ul>
                         </div>
 

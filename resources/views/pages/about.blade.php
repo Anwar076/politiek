@@ -47,7 +47,7 @@
                 <div class="space-y-4 text-white/80 text-sm md:text-base leading-relaxed">
                     <p>
                         Barendrecht wordt al jaren bestuurd door één partij met een absolute meerderheid. Dat is niet per definitie
-                        slecht — maar het vraagt om tegenmacht. Om een partij die kritisch meekijkt, alternatieven aandraagt en het
+                        slecht <span class="text-em-dash">—</span> maar het vraagt om tegenmacht. Om een partij die kritisch meekijkt, alternatieven aandraagt en het
                         college scherp houdt.
                     </p>
                     <p>
@@ -94,7 +94,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-white">Verbindend</h3>
                     <p class="mt-3 text-white/80 text-sm leading-relaxed">
-                        Wij brengen mensen samen. Barendrecht is van iedereen — ongeacht achtergrond, geloof of leeftijd.
+                        Wij brengen mensen samen. Barendrecht is van iedereen <span class="text-em-dash">—</span> ongeacht achtergrond, geloof of leeftijd.
                     </p>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                         </p>
                         <p>
                             Wij geloven in rechtszekerheid. Als de gemeente u een vergunning verleent, mag zij halverwege de regels niet veranderen.
-                            Als u een melding doet, heeft u recht op een inhoudelijk antwoord. Dit klinkt vanzelfsprekend — maar het is het niet.
+                            Als u een melding doet, heeft u recht op een inhoudelijk antwoord. Dit klinkt vanzelfsprekend <span class="text-em-dash">—</span> maar het is het niet.
                         </p>
                         <p>
                             Wij geloven in eerlijke politiek. Wij nemen standpunten in op gevoelige dossiers, ook als dat niet populair is.
@@ -192,7 +192,7 @@
     </section>
 
     {{-- Lijsttrekker placeholder --}}
-    <section class="py-12 md:py-16">
+    <!-- <section class="py-12 md:py-16">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="rounded-2xl bg-marine-light/30 border border-dashed border-white/20 p-6 md:p-8">
                 <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-2">Lijsttrekker</p>
@@ -201,7 +201,7 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <x-cta-section />
 </x-app-layout>

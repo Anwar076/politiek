@@ -25,13 +25,6 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">Actueel</h3>
-                    <ul class="space-y-2">
-                        <li><a href="{{ route('news.index') }}" class="text-white/80 hover:text-accent transition-colors text-sm">Nieuws &amp; Actueel</a></li>
-                        <li><a href="{{ route('agenda.index') }}" class="text-white/80 hover:text-accent transition-colors text-sm">Agenda</a></li>
-                    </ul>
-                </div>
-                <div>
                     <h3 class="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">Doe mee</h3>
                     <ul class="space-y-2">
                         <li><a href="{{ route('donate') }}" class="text-white/80 hover:text-accent transition-colors text-sm">Steun ons</a></li>
@@ -49,16 +42,16 @@
                 <div class="mt-6">
                     <p class="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">Volg ons</p>
                     <div class="flex flex-wrap gap-4 text-sm text-white/80">
-                        <a href="https://instagram.com/samenbarendrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="Instagram">Instagram</a>
-                        <a href="https://facebook.com/samenbarendrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="Facebook">Facebook</a>
-                        <a href="https://x.com/SamenBDrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="X">X</a>
+                        <a href="https://instagram.com/samenvoorbarendrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="Instagram">Instagram</a>
+                        <!-- <a href="https://facebook.com/samenbarendrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="Facebook">Facebook</a>
+                        <a href="https://x.com/SamenBDrecht" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" aria-label="X">X</a> -->
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="text-white/55 text-sm">© {{ date('Y') }} Samen Barendrecht — Samen voor Barendrecht</p>
+            <p class="text-white/55 text-sm">© {{ date('Y') }} Samen Barendrecht <span class="text-em-dash">—</span> Samen voor Barendrecht</p>
             <a href="mailto:info@samenvoorbarendrecht.nl" class="text-white/55 hover:text-accent text-sm transition-colors">info@samenvoorbarendrecht.nl</a>
         </div>
     </div>

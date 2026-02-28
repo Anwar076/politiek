@@ -10,7 +10,6 @@
                 <a href="{{ route('standpunten') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Standpunten</a>
                 <a href="{{ route('programma') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Programma</a>
                 <a href="{{ route('kandidaten') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Kandidaten</a>
-                <a href="{{ route('news.index') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Nieuws</a>
                 <a href="{{ route('about') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Over ons</a>
                 <a href="{{ route('contact') }}" class="text-white/90 hover:text-accent font-medium transition-colors">Contact</a>
                 <a href="{{ route('donate') }}" class="bg-accent hover:bg-accent-light text-marine font-bold px-5 py-2.5 rounded-lg transition-colors">Steun ons</a>

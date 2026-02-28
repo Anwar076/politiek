@@ -8,7 +8,7 @@
 
 <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
-        <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+        <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom" style="object-position: 110% center">
         <div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
     </div>
     <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 text-center py-20 md:py-28">
@@ -16,9 +16,13 @@
         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight uppercase drop-shadow-lg">
             {{ $title }}
         </h1>
-        @if($subtitle)
-            <p class="mt-5 text-xl md:text-2xl text-white/95 font-medium max-w-2xl mx-auto drop-shadow-md">
-                {{ $subtitle }}
+        @if($subtitle ?? isset($subtitleHtml))
+            <p class="mt-5 text-xl md:text-2xl text-white/95 font-medium max-w-2xl mx-auto drop-shadow-md flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                @isset($subtitleHtml)
+                    {!! $subtitleHtml !!}
+                @else
+                    {{ $subtitle }}
+                @endisset
             </p>
         @endif
         @if(isset($countdown))

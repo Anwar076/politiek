@@ -80,3 +80,8 @@
 .donation-amount-select:focus {
     outline: none;
 }
+
+/* Em-dash in accentkleur #54bc84 */
+.text-em-dash {
+    color: #54bc84;
+}
