@@ -2,13 +2,14 @@
     'title',
     'subtitle' => null,
     'image' => 'https://images.unsplash.com/photo-1540914129891-4b0c2c4e2c8e?w=1920&q=80',
+    'imagePosition' => 'center center',
     'ctaText' => null,
     'ctaUrl' => null,
 ])
 
 <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
-        <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom" style="object-position: 110% center">
+        <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom" style="object-position: {{ $imagePosition }}">
         <div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
     </div>
     <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 text-center py-20 md:py-28">

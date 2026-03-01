@@ -13,8 +13,8 @@ class PageController extends Controller
 
         return view('pages.about', [
             'page' => $page,
-            'metaTitle' => 'Over Samen Barendrecht — Wie zijn wij?',
-            'metaDescription' => 'Leer Samen Barendrecht kennen: een nieuwe lokale partij voor eerlijk bestuur, rechtszekerheid en een gemeente die werkt voor alle Barendrechters.',
+            'metaTitle' => 'Over Samen voor Barendrecht — Wie zijn wij? — Lijst 8',
+            'metaDescription' => 'Leer Samen voor Barendrecht kennen: een nieuwe lokale beweging voor eerlijk wonen, eerlijke financiën en eerlijk beleid voor alle Barendrechters.',
         ]);
     }
 
@@ -29,8 +29,8 @@ class PageController extends Controller
     public function programma(): View
     {
         return view('pages.programma', [
-            'metaTitle' => 'Verkiezingsprogramma Samen Barendrecht 2026',
-            'metaDescription' => 'Download het volledige verkiezingsprogramma van Samen Barendrecht. 10 thema’s, 10 meetbare doelen en 5 concrete beloftes.',
+            'metaTitle' => 'Verkiezingsprogramma Samen voor Barendrecht 2026 — Lijst 8',
+            'metaDescription' => 'Download het volledige verkiezingsprogramma van Samen voor Barendrecht. 11 thema’s, 5 meetbare doelen, 3 speerpunten. Lijst 8.',
         ]);
     }
 

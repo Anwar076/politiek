@@ -1,10 +1,11 @@
-<x-app-layout metaTitle="Samen Barendrecht — Daadkrachtig • Rechtszekerheid • Verbindend" metaDescription="Samen Barendrecht: de lokale partij voor eerlijk bestuur, rechtszekerheid en meetbare resultaten. Stem 18 maart 2026.">
+<x-app-layout metaTitle="Samen voor Barendrecht — Daadkrachtig • Rechtvaardig • Verbindend" metaDescription="Samen voor Barendrecht (Lijst 8): de nieuwe lokale partij voor eerlijk wonen, eerlijke financiën en eerlijk beleid. Stem 18 maart 2026.">
     @php
         $heroImage = asset('images/hero-whatsapp-2026-02-28.jpeg');
     @endphp
     <x-hero-section
         title="Barendrecht verdient eerlijk bestuur."
         :image="$heroImage"
+        imagePosition="35% center"
         ctaText="Bekijk onze standpunten"
         ctaUrl="{{ route('standpunten') }}"
     >
@@ -40,29 +41,111 @@
     </x-hero-section>
 
     {{-- Intro onder de hero --}}
-    
-
-    {{-- 48-uurgarantie --}}
     <section class="py-12 md:py-16">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="rounded-2xl bg-[#EBF5FB] text-marine border border-accent/40 px-6 py-8 md:px-10 md:py-10">
                 <p class="text-marine/90 text-sm md:text-base leading-relaxed">
-                    Samen Barendrecht is de nieuwe politieke partij die staat voor een gemeente die haar beloftes nakomt,
-                    u als inwoner serieus neemt en uw rechten beschermt. Geen holle woorden <span class="text-em-dash">—</span> meetbare resultaten.
+                    Samen voor Barendrecht is de nieuwe beweging van betrokken Barendrechters. Wij zijn jong en oud, geboren Barendrechter en nieuw-Barendrechter, van Carnisselande tot en met Molenvliet. Wat ons bindt: de overtuiging dat Barendrecht beter bestuurd kan worden door samenwerking, openheid en concrete resultaten.
                 </p>
             </div>
         </div>
     </section>
 
-    {{-- Waar u ons op mag afrekenen --}}
-    
+    {{-- Eerlijk bestuur: drie speerpunten --}}
+    <section class="py-12 md:py-16 bg-marine-light/20">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center mb-10">Eerlijk bestuur: drie speerpunten</h2>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-6 md:p-8 hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 text-left">
+                    <div class="w-14 h-14 rounded-xl bg-[#54bc84]/15 border border-[#54bc84]/40 flex items-center justify-center mb-5" aria-hidden="true">
+                        <i class="fa-solid fa-house text-2xl text-[#54bc84]" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mb-2">
+                        <span class="block text-lg md:text-xl font-bold text-white uppercase tracking-wide">Eerlijk</span>
+                        <span class="block text-lg md:text-xl font-bold text-[#54bc84] uppercase tracking-wide">Wonen</span>
+                    </h3>
+                    <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                        Woningen makkelijker kunnen optoppen, verhuren en splitsen.
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-6 md:p-8 hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 text-left">
+                    <div class="w-14 h-14 rounded-xl bg-[#54bc84]/15 border border-[#54bc84]/40 flex items-center justify-center mb-5" aria-hidden="true">
+                        <i class="fa-solid fa-coins text-2xl text-[#54bc84]" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mb-2">
+                        <span class="block text-lg md:text-xl font-bold text-white uppercase tracking-wide">Eerlijke</span>
+                        <span class="block text-lg md:text-xl font-bold text-[#54bc84] uppercase tracking-wide">Financiën</span>
+                    </h3>
+                    <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                        Eerlijk begroten en keuzes durven te maken, zoals: riolering voor het oude dorp en geen kaalslag buitenruimte.
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-6 md:p-8 hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 text-left">
+                    <div class="w-14 h-14 rounded-xl bg-[#54bc84]/15 border border-[#54bc84]/40 flex items-center justify-center mb-5" aria-hidden="true">
+                        <i class="fa-solid fa-scale-balanced text-2xl text-[#54bc84]" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mb-2">
+                        <span class="block text-lg md:text-xl font-bold text-white uppercase tracking-wide">Eerlijk</span>
+                        <span class="block text-lg md:text-xl font-bold text-[#54bc84] uppercase tracking-wide">Beleid</span>
+                    </h3>
+                    <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                        Transparant verlenen van subsidies, vergunningen en ruimtelijke ontwikkelingen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Vijf meetbare doelen --}}
+    <section class="py-16 md:py-20">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center mb-10">Waar u ons op mag afrekenen</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-5 md:p-6 flex gap-4 hover:border-accent/30 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base md:text-lg">200 betaalbare woningen erbij</h3>
+                        <p class="text-white/80 text-sm mt-1">Opgeleverd of in aanbouw eind 2030. realisatie 30% sociale huur en 20% betaalbare middenhuur bij alle nieuwbouw.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-5 md:p-6 flex gap-4 hover:border-accent/30 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base md:text-lg">Wateroverlastplan Oude Dorp</h3>
+                        <p class="text-white/80 text-sm mt-1">Start uitvoering rioolvervanging, waterberging en klimaatadaptieve herinrichting in 2027.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-5 md:p-6 flex gap-4 hover:border-accent/30 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base md:text-lg">Bezuiniging buitenruimte teruggedraaid</h3>
+                        <p class="text-white/80 text-sm mt-1">Structureel in de begroting 2027. Geen kaalslag meer op groen, straten en verlichting.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-5 md:p-6 flex gap-4 hover:border-accent/30 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold flex-shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base md:text-lg">Verkeersveiligheidsplan schoolzones</h3>
+                        <p class="text-white/80 text-sm mt-1">Vastgesteld vóór eind 2027. Kinderen moeten veilig naar school kunnen fietsen.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-marine-light/30 p-5 md:p-6 flex gap-4 hover:border-accent/30 transition-colors sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold flex-shrink-0">5</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base md:text-lg">OZB maximaal inflatie</h3>
+                        <p class="text-white/80 text-sm mt-1">Geen onnodige extra verhoging in de periode 2027–2030.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     {{-- Oproep tot actie --}}
     <section class="py-16 md:py-20 bg-marine-light/30">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="rounded-2xl bg-marine-light/60 border border-white/10 px-6 py-10 md:px-10 md:py-12 text-center md:text-left">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="text-2xl md:text-3xl font-extrabold text-white">Doe mee met Samen Barendrecht</h2>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white">Doe mee met Samen voor Barendrecht</h2>
                     <p class="mt-3 text-white/80 text-sm md:text-base leading-relaxed">
                         Barendrecht verdient een gemeente die luistert, uitlegt en levert. Help ons dat waar te maken.
                     </p>
@@ -90,16 +173,17 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 @php
                     $themas = [
-                        ['label' => 'Wonen & Doorstroming', 'anchor' => 'wonen'],
-                        ['label' => 'Jongeren & Sport', 'anchor' => 'jongeren'],
-                        ['label' => 'Eerlijk Bestuur & Rechtszekerheid', 'anchor' => 'bestuur'],
-                        ['label' => 'Buitenruimte, Riolering & Afval', 'anchor' => 'buitenruimte'],
+                        ['label' => 'Eerlijk Wonen & Doorstroming', 'anchor' => 'wonen'],
                         ['label' => 'Veiligheid & Verkeer', 'anchor' => 'veiligheid'],
+                        ['label' => 'Buitenruimte & Groen', 'anchor' => 'buitenruimte'],
                         ['label' => 'Financiën & Lokale Lasten', 'anchor' => 'financien'],
-                        ['label' => 'Gezond Ondernemersklimaat', 'anchor' => 'ondernemen'],
-                        ['label' => 'Zorg & Welzijn', 'anchor' => 'zorg'],
+                        ['label' => 'Oude Dorpskern & Wateroverlast', 'anchor' => 'oude-dorp'],
+                        ['label' => 'Afval & Duurzaamheid', 'anchor' => 'afval'],
+                        ['label' => 'Welzijn & Zorg', 'anchor' => 'zorg'],
+                        ['label' => 'Rechtvaardig Bestuur', 'anchor' => 'bestuur'],
+                        ['label' => 'Jongeren & Sport', 'anchor' => 'jongeren'],
+                        ['label' => 'Winkelcentra & Economie', 'anchor' => 'winkelcentra'],
                         ['label' => 'Regionale Samenwerking', 'anchor' => 'regio'],
-                        ['label' => 'Communicatie & Burgerparticipatie', 'anchor' => 'communicatie'],
                     ];
                 @endphp
                 @foreach($themas as $thema)
@@ -118,7 +202,7 @@
     </section>
 
     {{-- Campagne in beeld: 3 speelse afbeeldingen (optioneel laten staan als visuele sfeer) --}}
-    <section class="py-12 md:py-16">
+    <!-- <section class="py-12 md:py-16">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <p class="text-center text-accent font-semibold text-sm uppercase tracking-wider mb-8">Campagne in beeld</p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
@@ -148,7 +232,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     {{-- Nieuws --}}
     
@@ -163,7 +247,7 @@
             <div class="grid md:grid-cols-3 gap-6 md:gap-8">
                 <div class="rounded-2xl overflow-hidden border border-white/10 bg-marine-light/40 hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-in-up">
                     <div class="relative aspect-[3/2] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=500&q=80" alt="Daadkrachtig" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=500&q=80" alt="Daadkrachtig" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-marine via-marine/50 to-transparent"></div>
                         <span class="absolute bottom-3 left-3 text-accent font-bold">Daadkrachtig</span>
                     </div>

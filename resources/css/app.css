@@ -85,3 +85,11 @@
 .text-em-dash {
     color: #54bc84;
 }
+
+/* Speerpunt-iconen: zwarte PNG's tinten naar groen #54bc84 */
+.icon-speerpunt {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(45%) saturate(800%) hue-rotate(110deg);
+}
+.object-contain.icon-speerpunt {
+    object-fit: contain;
+}

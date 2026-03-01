@@ -1,21 +1,21 @@
 <x-app-layout :metaTitle="$metaTitle" :metaDescription="$metaDescription">
     <x-hero-section
         title="Waar staan wij voor?"
-        subtitle="Tien thema’s. Concreet, eerlijk en meetbaar."
+        subtitle="Onze thema’s. Concreet, eerlijk en meetbaar."
     />
 
     {{-- Intro --}}
-    <section class="py-10 md:py-14">
+    <!-- <section class="py-10 md:py-14">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <p class="text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
                 Hieronder vindt u onze standpunten op tien thema’s. Wij zijn concreet, eerlijk en meetbaar.
                 Klik op een thema voor meer details.
             </p>
         </div>
-    </section>
+    </section> -->
 
     {{-- Snelnavigatie: ankerlinks --}}
-    <section class="py-4 pb-8 md:pb-10 border-b border-white/10">
+    <!-- <section class="py-4 pb-8 md:pb-10 border-b border-white/10">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <p class="text-accent font-semibold text-xs uppercase tracking-wider mb-4">Naar thema</p>
             <div class="flex flex-wrap gap-2">
@@ -37,69 +37,108 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> -->
 
     {{-- Thema's in kaarten --}}
-    <section class="py-12 md:py-20">
-        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8 md:space-y-10">
-            @foreach([
-                ['id' => 'wonen', 'num' => 1, 'title' => 'Wonen & Doorstroming', 'intro' => 'De wachttijd voor een sociale huurwoning is meer dan zeven jaar. Van de 6.300 jongvolwassenen wonen er 5.400 nog thuis. Dat moet anders.', 'items' => ['Minimaal 30% nieuwbouw voor Barendrechtse starters en cruciale beroepen.', 'Minimaal 200 extra betaalbare woningen in aanbouw deze raadsperiode.', 'Optoppen van bestaande flats: twee pilotprojecten.', 'Meer levensloopbestendige woningen voor ouderen.', 'Transparante toewijzingscriteria — dezelfde regels voor iedereen.']],
-                ['id' => 'jongeren', 'num' => 2, 'title' => 'Jongeren & Sport', 'intro' => 'De helft van de Barendrechtse jongeren ervaart psychische klachten. De Jongerenraad is opgeheven. BLOK0180 staat onder druk. Wij nemen jongeren serieus.', 'items' => ['Digitaal Jongerenpanel — operationeel binnen 6 maanden.', 'BLOK0180 behouden met minimaal het huidige niveau.', 'Laagdrempelig spreekuur mentale gezondheid via scholen.', 'Oefenruimtes, veilige hangplekken en betaalbare sport.']],
-                ['id' => 'bestuur', 'num' => 3, 'title' => 'Eerlijk Bestuur & Rechtszekerheid', 'intro' => 'Dit is de kern van onze partij. Rechtszekerheid betekent: de gemeente houdt zich aan haar eigen regels, behandelt iedereen gelijk, en verandert de spelregels niet tijdens de wedstrijd.', 'items' => ['48-uurgarantie: 90% van meldingen binnen 48 uur inhoudelijk beantwoord.', 'Nul regelwijzigingen bij lopende vergunningprocedures.', 'Kwartaalrapportages openbaar op de gemeentewebsite.', 'Raadsbesluiten helder uitgelegd, inclusief overwogen alternatieven.']],
-                ['id' => 'buitenruimte', 'num' => 4, 'title' => 'Buitenruimte, Riolering & Afval', 'intro' => 'Tegels liggen los, verlichting is kapot, het riool in de dorpskern kan het niet aan. Waar anderen bezuinigen, investeren wij.', 'items' => ['Budget buitenruimte minimaal op niveau 2024 — géén bezuinigingen.', 'Rioolvernieuwingsplan dorpskern: vastgesteld binnen 12 maanden, eerste fase binnen 24 maanden.', 'Afvalscheidingspercentage naar 75%.', 'Uitbreiding mobiel afvalaanbiedstation.', 'Geen betaling per klepbeweging.']],
-                ['id' => 'veiligheid', 'num' => 5, 'title' => 'Veiligheid & Verkeer', 'intro' => 'Een veilig Barendrecht voor iedereen, in elke wijk, op elk uur.', 'items' => ['Sterk jeugdwerk als eerste verdedigingslinie tegen overlast.', 'Maandelijks wijkspreekuur met wijkagent — zonder afspraak.', 'Betere fietsroutes naar scholen en stations.', 'Wijkverkeersplannen opgesteld samen met bewoners.']],
-                ['id' => 'financien', 'num' => 6, 'title' => 'Financiën & Lokale Lasten', 'intro' => 'Realistisch begroten: geen structurele uitgaven uit incidentele meevallers.', 'items' => ['Kwartaalrapportage gemeentefinanciën openbaar.', 'Gratis OV ouderen eerlijk evalueren binnen 12 maanden: bereikt het de juiste mensen?', 'Hondenbelasting omvormen tot kostendekkende hondenheffing.']],
-                ['id' => 'ondernemen', 'num' => 7, 'title' => 'Gezond Ondernemersklimaat', 'intro' => 'Ondernemers verdienen een betrouwbare gemeente met heldere regels en vaste doorlooptijden.', 'items' => ['Ondernemersloket als één aanspreekpunt.', 'Dutch Fresh Port faciliteren, niet overnemen.', 'Samenwerking onderwijs-bedrijfsleven stimuleren.']],
-                ['id' => 'zorg', 'num' => 8, 'title' => 'Zorg & Welzijn', 'intro' => '40% van de Barendrechters is matig tot ernstig eenzaam. Dat is een volksgezondheidsprobleem.', 'items' => ['500 huisbezoeken per jaar bij gesignaleerde eenzame inwoners.', 'KijkopWelzijn geïndexeerd, maar met transparante verantwoording.', 'Voedselbank ondersteunen, armoedeaanpak verbreden naar werkende armen.']],
-                ['id' => 'regio', 'num' => 9, 'title' => 'Regionale Samenwerking', 'intro' => 'Barendrecht staat niet op een eiland. Constructief samenwerken met buurgemeenten — zonder onze belangen uit het oog te verliezen.', 'items' => []],
-                ['id' => 'communicatie', 'num' => 10, 'title' => 'Communicatie & Burgerparticipatie', 'intro' => 'Een gemeente die luistert, wint vertrouwen. Informatie in begrijpelijke taal, digitaal én aan het loket.', 'items' => []],
-            ] as $theme)
-                <article id="{{ $theme['id'] }}" class="scroll-mt-24 rounded-2xl border border-white/10 bg-marine-light/30 overflow-hidden hover:border-accent/30 transition-colors">
-                    <div class="p-6 md:p-8">
-                        <div class="flex flex-wrap items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold text-lg flex-shrink-0">
-                                {{ $theme['num'] }}
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2 class="text-xl md:text-2xl font-extrabold text-white">{{ $theme['num'] }}. {{ $theme['title'] }}</h2>
-                                <p class="mt-3 text-white/80 text-sm md:text-base leading-relaxed">
-                                    {!! str_replace('—', '<span class="text-em-dash">—</span>', e($theme['intro'])) !!}
-                                </p>
-                                @if(!empty($theme['items']))
-                                    <div class="mt-5">
-                                        <p class="text-accent font-semibold text-sm mb-2">Wat wij willen:</p>
-                                        <ul class="space-y-2 text-white/85 text-sm md:text-base">
-                                            @foreach($theme['items'] as $item)
-                                                <li class="flex items-start gap-2">
-                                                    <span class="text-accent mt-1.5 flex-shrink-0">•</span>
-                                                    <span>{!! str_replace('—', '<span class="text-em-dash">—</span>', e($item)) !!}</span>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
+    <section class="py-16 md:py-24 bg-marine-light/20 border-t border-white/10">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white">Waar staan wij voor?</h2>
+            <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
+                Hieronder vindt u onze standpunten op elf thema’s. Wij zijn concreet, eerlijk en meetbaar. Klik op een thema voor meer details.
+            </p>
+
+            {{-- Snelnavigatie --}}
+            <div class="mt-8 pb-8 border-b border-white/10">
+                <p class="text-accent font-semibold text-xs uppercase tracking-wider mb-4">Naar thema</p>
+                <div class="flex flex-wrap gap-2">
+                    @foreach([
+                        ['label' => 'Eerlijk Wonen', 'id' => 'wonen'],
+                        ['label' => 'Veiligheid & Verkeer', 'id' => 'veiligheid'],
+                        ['label' => 'Buitenruimte & Groen', 'id' => 'buitenruimte'],
+                        ['label' => 'Financiën', 'id' => 'financien'],
+                        ['label' => 'Oude Dorp & Wateroverlast', 'id' => 'oude-dorp'],
+                        ['label' => 'Afval & Duurzaamheid', 'id' => 'afval'],
+                        ['label' => 'Welzijn & Zorg', 'id' => 'welzijn'],
+                        ['label' => 'Rechtvaardig Bestuur', 'id' => 'bestuur'],
+                        ['label' => 'Jongeren & Sport', 'id' => 'jongeren'],
+                        ['label' => 'Winkelcentra & Economie', 'id' => 'winkelcentra'],
+                        ['label' => 'Regionale Samenwerking', 'id' => 'regio'],
+                    ] as $item)
+                        <a href="#{{ $item['id'] }}" class="inline-flex items-center px-3 py-1.5 rounded-lg bg-marine-light/50 border border-white/10 text-white/90 text-sm hover:border-accent/40 hover:text-accent transition-colors">
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
+            {{-- Thema's in kaarten --}}
+            <div class="mt-12 space-y-8 md:space-y-10">
+                @php
+                    $themes = [
+                        ['id' => 'wonen', 'num' => 1, 'title' => 'Eerlijk Wonen & Doorstroming', 'intro' => 'Starters en ouderen die willen doorstromen vinden geen betaalbare woning. De Stationstuinen, het grootste bouwproject van Barendrecht, lopen jaren vertraging op.', 'items' => ['Maximaal 30% sociale huur en 20% betaalbare middenhuur bij alle nieuwbouw, inclusief de Stationstuinen.', 'Voorrang voor Barendrechters die al minstens drie jaar in het dorp wonen of werken, binnen wettelijke kaders.', 'Stevige afspraken met ontwikkelaars over betaalbaarheid, groen en voorzieningen — nu, niet achteraf.', 'Scherper gemeentelijk toezicht op kwaliteit vergunningaanvragen: broddelwerk en salamitactiek accepteren we niet.', 'Stimuleren van optoppen, flexwoonconcepten, en het splitsen of verhuren van panden.', 'Goede aansluiting op OV, scholen en winkels vanaf dag één.'], 'meetbaar' => ['Minimaal 200 betaalbare woningen erbij in deze raadsperiode.', 'Eerste optopproject gestart vóór eind 2027.', 'Prestatieafspraken met ontwikkelaars vastgelegd vóór bouwstart.']],
+                        ['id' => 'veiligheid', 'num' => 2, 'title' => 'Veiligheid & Verkeer', 'intro' => 'Barendrechters maken zich zorgen over inbraken, overlast en verkeersveiligheid bij scholen en in tunnels. Het gevoel van veiligheid begint in de buurt.', 'items' => ['Verkeersveiligheid bij scholen aanpakken, waaronder kruispunt Zuidersingel/Avenue Carnisse.', 'Betere verlichting en onderhoud tunnels.', 'Vaste wijkboa\'s die de buurt kennen, zichtbaar in de wijk.', 'Investeren in buurtwerk en jongerenwerk als preventie tegen overlast.', '48-uurgarantie voor veiligheidsmeldingen.', 'Geluidsoverlast Portlandse Baan aanpakken.', 'Betere OV-verbinding oost-west.', 'Slimme parkeeroplossingen in plaats van betaald parkeren.'], 'meetbaar' => ['Verkeersveiligheidsplan voor alle schoolzones vóór eind 2027.', 'Vaste wijkboa\'s in elke wijk.', '48-uurreactie op veiligheidsmeldingen.']],
+                        ['id' => 'buitenruimte', 'num' => 3, 'title' => 'Buitenruimte & Groen', 'intro' => 'Er is jarenlang bezuinigd op onderhoud van de openbare ruimte. Sinds 2010 is er €850.000 minder beschikbaar voor groenonderhoud. De bezuiniging op onkruidbestrijding moest in 2025 worden teruggedraaid na klachten.', 'items' => ['Bezuinigingen op groenonderhoud structureel terugdraaien.', 'Wijkschouwen invoeren: bewoners lopen samen met een ambtenaar door hun buurt en markeren knelpunten.', 'Resultaten openbaar en voorzien van een planning.', 'Alle verzakte stoepen in kaart brengen en herstellen.'], 'meetbaar' => ['Terugdraaien bezuinigingen buitenruimte (structureel in begroting 2027).', 'Twee wijkschouwen per wijk per jaar.', 'Binnen de raadsperiode: alle verzakte stoepen hersteld.']],
+                        ['id' => 'financien', 'num' => 4, 'title' => 'Financiën & Lokale Lasten', 'intro' => 'Barendrecht koerst af op een structureel tekort van bijna €5 miljoen. Vier jaar lang stemde de voltallige oppositie tegen de begroting. De Provincie moest ingrijpen.', 'items' => ['OZB maximaal gelijk aan inflatie — geen melkkoe.', 'Structureel sluitende begroting uiterlijk in 2028.', 'Dekking zoeken in slimmere bedrijfsvoering en regionale samenwerking, niet in uw portemonnee.', 'Jaarlijkse publicatie van een begrijpelijk financieel inwonersoverzicht in gewone taal.', 'Geen prestigeprojecten die we niet kunnen betalen.'], 'meetbaar' => ['OZB-stijging maximaal gelijk aan inflatie.', 'Structureel sluitende begroting uiterlijk in 2028.', 'Jaarlijkse publicatie begrijpelijk financieel inwonersoverzicht.']],
+                        ['id' => 'oude-dorp', 'num' => 5, 'title' => 'Oude Dorpskern & Wateroverlast', 'intro' => 'Bij hevige regenbuien loopt het laaggelegen Oude Dorp onder water. Er is €1,1 miljoen gereserveerd voor klimaataanpassingen. Het vorige college wilde dit geld aan andere zaken besteden. Oppositiepartijen moesten gezamenlijk voorkomen dat het budget werd weggesluisd.', 'items' => ['Absolute prioriteit aan rioolvervanging, waterberging en klimaatadaptieve herinrichting.', 'Uitvoering in overleg met bewoners.', 'Dit project duldt geen verder uitstel.'], 'meetbaar' => []],
+                        ['id' => 'afval', 'num' => 6, 'title' => 'Afval & Duurzaamheid', 'intro' => 'De afschaffing van Diftar kost €1 miljoen per jaar. Wij kiezen niet voor terugkeer van Diftar, maar wél voor een modern en duurzaam alternatief.', 'items' => ['Modern en duurzaam afvalaanbiedstation met ruimere openingstijden.', 'Slimme prikkels die afvalscheiding belonen.', 'Geen betaling per klepbeweging.'], 'meetbaar' => []],
+                        ['id' => 'welzijn', 'num' => 7, 'title' => 'Welzijn & Zorg', 'intro' => 'KijkopWelzijn ontvangt €1,9 miljoen per jaar. Het college wilde €750.000 bezuinigen, maar moest dat na protest terugbrengen tot €170.000. Wij geloven in welzijnswerk, maar dan met meetbare resultaten.', 'items' => ['Heldere prestatieafspraken: hoeveel inwoners bereikt, hoeveel eenzaamheid teruggedrongen, hoeveel mantelzorgers ondersteund.', 'Kerntaken zoals Vraagwijzer, ouderenadviseurs en schuldhulpmaatjes beschermen.', 'Meer steun voor organisaties zoals Stichting Present die met beperkt budget veel bereiken.', 'Gratis OV voor ouderen eerlijk evalueren: budget naar wie het écht nodig heeft.'], 'meetbaar' => []],
+                        ['id' => 'bestuur', 'num' => 8, 'title' => 'Rechtvaardig Bestuur', 'intro' => 'Dit is de kern van onze partij. Rechtvaardig bestuur betekent dat u als inwoner kunt vertrouwen op uw gemeente.', 'items' => ['Bij een vergunningaanvraag weet u vooraf de regels en krijgt u binnen de termijn antwoord.', 'Bij besluiten die u raken wordt u op tijd en begrijpelijk geïnformeerd.', 'Bij bezwaar wordt uw zaak serieus behandeld, niet maandenlang op de plank gelegd.', 'Bij fouten geeft de gemeente dat toe en lost het op.', 'Nul regelwijzigingen bij lopende vergunningprocedures.', 'Lering trekken uit de controversiële dossiers van ProRail en ICB.', 'Dit geldt voor elke inwoner en elke organisatie, zonder uitzondering.'], 'meetbaar' => []],
+                        ['id' => 'jongeren', 'num' => 9, 'title' => 'Jongeren & Sport', 'intro' => 'Geen traditioneel jongerenpanel dat doodbloedt, maar concrete projecten waarbij jongeren écht iets te zeggen hebben.', 'items' => ['Concrete projecten waarbij jongeren meedenken: ontwerp speelveld, programmering activiteiten, inrichting hangplek.', 'Gekoppeld aan buurtsportcoaches en jongerenwerk.', 'Vernieuwing sporthal De Driesprong met een realistisch plan.', 'Betaalbaar badwater voor zwemverenigingen.', 'Gemeentelijk aanspreekpunt voor sportverenigingen.', 'Betaalbaar sporten voor jongeren via uitbreiding Jeugdfonds Sport & Cultuur.'], 'meetbaar' => []],
+                        ['id' => 'winkelcentra', 'num' => 10, 'title' => 'Winkelcentra & Economie', 'intro' => 'De Middenbaan en Carnisse Veste hebben te kampen met leegstand. Ondernemers verdienen een betrouwbare gemeente.', 'items' => ['Samenwerking met ondernemersverenigingen voor levendige winkelcentra.', 'Actieve leegstandsbestrijding en aantrekkelijker openbare ruimte.', 'Vast gemeentelijk aanspreekpunt voor ondernemers met maximaal één week reactietijd.', 'Samenwerking onderwijs-bedrijfsleven stimuleren.'], 'meetbaar' => []],
+                        ['id' => 'regio', 'num' => 11, 'title' => 'Regionale Samenwerking', 'intro' => 'De verhouding met buurgemeenten is verslechterd na de ontmanteling van de BAR-samenwerking. Wij herstellen de samenwerking op praktische terreinen.', 'items' => ['Gezamenlijke inkoop, gedeelde specialisten, afgestemde beleidsvorming.', 'Slim delen waar het kan, zelf doen waar het moet.'], 'meetbaar' => []],
+                    ];
+                @endphp
+                @foreach($themes as $theme)
+                    <article id="{{ $theme['id'] }}" class="scroll-mt-24 rounded-2xl border border-white/10 bg-marine-light/30 overflow-hidden hover:border-accent/30 transition-colors">
+                        <div class="p-6 md:p-8">
+                            <div class="flex flex-wrap items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent font-bold text-lg flex-shrink-0">
+                                    {{ $theme['num'] }}
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h2 class="text-xl md:text-2xl font-extrabold text-white">{{ $theme['num'] }}. {{ $theme['title'] }}</h2>
+                                    <p class="mt-3 text-white/80 text-sm md:text-base leading-relaxed">
+                                        {!! str_replace('—', '<span class="text-em-dash">—</span>', e($theme['intro'])) !!}
+                                    </p>
+                                    @if(!empty($theme['items']))
+                                        <div class="mt-5">
+                                            <p class="text-accent font-semibold text-sm mb-2">Wat wij willen:</p>
+                                            <ul class="space-y-2 text-white/85 text-sm md:text-base">
+                                                @foreach($theme['items'] as $item)
+                                                    <li class="flex items-start gap-2">
+                                                        <span class="text-accent mt-1.5 flex-shrink-0">•</span>
+                                                        <span>{!! str_replace('—', '<span class="text-em-dash">—</span>', e($item)) !!}</span>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+                                    @if(!empty($theme['meetbaar']))
+                                        <div class="mt-5 pt-4 border-t border-white/10">
+                                            <p class="text-[#54bc84] font-semibold text-sm mb-2">Meetbaar:</p>
+                                            <ul class="space-y-2 text-white/80 text-sm md:text-base">
+                                                @foreach($theme['meetbaar'] as $m)
+                                                    <li class="flex items-start gap-2">
+                                                        <span class="text-[#54bc84] mt-1.5 flex-shrink-0">✓</span>
+                                                        <span>{!! str_replace('—', '<span class="text-em-dash">—</span>', e($m)) !!}</span>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-            @endforeach
-        </div>
-    </section>
+                    </article>
+                @endforeach
+            </div>
 
-    {{-- CTA: Download programma --}}
-    <section class="py-16 md:py-20 bg-marine-light/20 border-t border-white/10">
-        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <div class="rounded-2xl bg-marine-light/40 border border-white/10 p-8 md:p-10 text-center">
-                <h2 class="text-xl md:text-2xl font-extrabold text-white">Het volledige programma</h2>
-                <p class="mt-2 text-white/80 text-sm md:text-base max-w-xl mx-auto">
-                    Lees alle standpunten, doelen en onze positie op gevoelige dossiers in één document.
-                </p>
-                <div class="mt-6">
-                    <a href="{{ route('programma') }}" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-6 py-3 rounded-lg text-sm md:text-base transition-colors">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        Download het volledige programma (PDF)
-                    </a>
-                </div>
+            {{-- CTA: Download programma --}}
+            <div class="mt-16 text-center">
+                <a href="{{ route('programma') }}" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-xl text-base transition-colors">
+                    <i class="fa-solid fa-download"></i>
+                    Download het volledige programma (PDF)
+                </a>
             </div>
         </div>
     </section>

@@ -1,6 +1,6 @@
 @props([
     'title' => 'Steun onze campagne',
-    'description' => 'Samen maken we Barendrecht sterker. Kies hoe jij wilt bijdragen.',
+    'description' => 'Samen maken we Barendrecht sterker. Doe mee als vrijwilliger.',
     'primaryText' => 'Word vrijwilliger',
     'primaryUrl' => null,
     'secondaryText' => 'Doneer',
@@ -13,39 +13,38 @@
 @endphp
 
 <section class="relative py-20 md:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-marine-light/80 via-marine to-marine-dark"></div>
-    <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 2px 2px, rgba(16,185,129,0.15) 1px, transparent 0); background-size: 32px 32px;"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-marine-light/90 via-marine to-marine-dark"></div>
+    <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 2px 2px, rgba(84,188,132,0.12) 1px, transparent 0); background-size: 28px 28px;"></div>
+    <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#54bc84]/40 to-transparent"></div>
     <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6">
-        <div class="text-center mb-14">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/20 border border-accent/40 mb-6">
-                <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        <div class="text-center mb-12 md:mb-14">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#54bc84]/20 border border-[#54bc84]/40 mb-6 shadow-lg shadow-[#54bc84]/10">
+                <i class="fa-solid fa-heart text-2xl text-[#54bc84]"></i>
             </div>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white">{{ $title }}</h2>
-            <p class="mt-4 text-lg md:text-xl text-white/85 max-w-2xl mx-auto">{{ $description }}</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">{{ $title }}</h2>
+            <p class="mt-4 text-lg md:text-xl text-white/85 max-w-xl mx-auto leading-relaxed">{{ $description }}</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-            <a href="{{ $primaryUrl }}" class="group group/v block p-8 rounded-2xl bg-white/10 backdrop-blur border border-white/20 hover:border-accent/50 hover:bg-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/20 text-center">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/30 text-accent mb-5 group-hover/v:scale-110 transition-transform">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <div class="flex justify-center">
+            <a href="{{ $primaryUrl }}" class="group block w-full max-w-md p-8 md:p-10 rounded-2xl bg-white/5 backdrop-blur-sm border-2 border-white/15 hover:border-[#54bc84]/50 hover:bg-[#54bc84]/10 transition-all duration-300 hover:shadow-xl hover:shadow-[#54bc84]/15 text-center">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-[#54bc84]/25 border border-[#54bc84]/30 text-[#54bc84] mb-6 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-people-group text-3xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white">Word vrijwilliger</h3>
-                <p class="mt-2 text-white/80 text-sm">Help mee met flyeren, evenementen of communicatie.</p>
-                <span class="inline-flex items-center gap-2 mt-5 text-accent font-semibold group-hover/v:gap-3 transition-all">
+                <h3 class="text-xl md:text-2xl font-bold text-white">{{ $primaryText }}</h3>
+                <p class="mt-3 text-white/75 text-sm md:text-base">Help mee met flyeren, evenementen of communicatie. Elke bijdrage telt.</p>
+                <span class="inline-flex items-center justify-center gap-2 mt-6 text-[#54bc84] font-semibold group-hover:gap-3 transition-all">
                     Aanmelden
-                    <svg class="w-5 h-5 group-hover/v:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </span>
-            </a>
-            <a href="{{ $secondaryUrl }}" class="group group/v block p-8 rounded-2xl bg-white/10 backdrop-blur border border-white/20 hover:border-accent/50 hover:bg-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/20 text-center">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/30 text-accent mb-5 group-hover/v:scale-110 transition-transform">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <h3 class="text-xl font-bold text-white">Doneer</h3>
-                <p class="mt-2 text-white/80 text-sm">Steun onze campagne met een eenmalige bijdrage.</p>
-                <span class="inline-flex items-center gap-2 mt-5 text-accent font-semibold group-hover/v:gap-3 transition-all">
-                    Steun ons
-                    <svg class="w-5 h-5 group-hover/v:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-0.5 transition-transform"></i>
                 </span>
             </a>
         </div>
+        {{-- Doneer als secundaire optie (tekstlink) --}}
+        <!-- <p class="mt-8 text-center">
+            <a href="{{ $secondaryUrl }}" class="text-white/60 hover:text-[#54bc84] text-sm font-medium transition-colors underline underline-offset-2 decoration-white/30 hover:decoration-[#54bc84]/50">Of steun ons met een donatie</a>
+        </p> -->
+        {{-- Doneer als volwaardige kaart (in comment) --}}
+        <!-- <a href="{{ $secondaryUrl }}" class="group block p-8 rounded-2xl bg-white/10 border border-white/20 hover:border-accent/50 text-center">
+            <h3 class="text-xl font-bold text-white">Doneer</h3>
+            <p class="mt-2 text-white/80 text-sm">Steun onze campagne met een eenmalige bijdrage.</p>
+        </a> -->
     </div>
 </section>
