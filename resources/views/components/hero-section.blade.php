@@ -7,18 +7,18 @@
     'ctaUrl' => null,
 ])
 
-<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<section class="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
         <img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom" style="object-position: {{ $imagePosition }}">
         <div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
     </div>
-    <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 text-center py-20 md:py-28">
-        <div class="h-1 w-20 bg-accent mx-auto mb-6 rounded-full"></div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight uppercase drop-shadow-lg">
+    <div class="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 text-center py-12 sm:py-16 md:py-20 lg:py-28">
+        <div class="h-1 w-20 bg-accent mx-auto mb-4 sm:mb-6 rounded-full"></div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-tight uppercase drop-shadow-lg">
             {{ $title }}
         </h1>
         @if($subtitle ?? isset($subtitleHtml))
-            <p class="mt-5 text-xl md:text-2xl text-white/95 font-medium max-w-2xl mx-auto drop-shadow-md flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <p class="mt-3 sm:mt-5 text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 font-medium max-w-2xl mx-auto drop-shadow-md flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-3 gap-y-1">
                 @isset($subtitleHtml)
                     {!! $subtitleHtml !!}
                 @else

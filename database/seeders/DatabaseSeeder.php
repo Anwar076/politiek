@@ -11,13 +11,20 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $admin = User::factory()->admin()->create([
-            'name' => 'Admin',
-            'email' => 'admin@samenvoorbarendrecht.nl',
-            'password' => bcrypt('password'),
-        ]);
+        $admin = User::updateOrCreate(
+            ['email' => 'admin@samenvoorbarendrecht.nl'],
+            [
+                'name' => 'Admin',
+                'password' => 'Samenvoorbarendrecht@2026',
+                'is_admin' => true,
+            ]
+        );
 
-        Post::factory(6)->create(['user_id' => $admin->id]);
-        Event::factory(5)->create();
+        if (Post::count() === 0) {
+            Post::factory(6)->create(['user_id' => $admin->id]);
+        }
+        if (Event::count() === 0) {
+            Event::factory(5)->create();
+        }
     }
 }

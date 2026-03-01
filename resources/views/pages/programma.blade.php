@@ -1,8 +1,9 @@
 <x-app-layout :metaTitle="$metaTitle" :metaDescription="$metaDescription">
-    <x-hero-section
-        title="Verkiezingsprogramma 2026"
-        subtitle="11 thema's. 5 meetbare doelen. 3 speerpunten."
-    />
+    <x-hero-section title="Verkiezingsprogramma 2026">
+        <x-slot:subtitleHtml>
+            11 thema's. 5 meetbare doelen.<br class="sm:hidden"> 3 speerpunten.
+        </x-slot:subtitleHtml>
+    </x-hero-section>
 
     {{-- Ons programma intro + download (prominent) --}}
     <section class="py-10 md:py-14">
