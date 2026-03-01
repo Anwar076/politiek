@@ -18,6 +18,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Contact form recipient
+    |--------------------------------------------------------------------------
+    | E-mailadres waar contactformulierberichten naartoe worden gestuurd.
+    */
+    'contact_to' => env('CONTACT_EMAIL', 'info@samenvoorbarendrecht.nl'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Mailer Configurations
     |--------------------------------------------------------------------------
     |

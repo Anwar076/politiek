@@ -22,6 +22,14 @@
                     <p class="font-medium">{{ session('success') }}</p>
                 </div>
             @endif
+            @if(session('error'))
+                <div class="mb-8 p-5 rounded-2xl bg-red-500/20 border border-red-500/40 text-white flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-red-500/30 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <p class="font-medium">{{ session('error') }}</p>
+                </div>
+            @endif
             @if($errors->any())
                 <div class="mb-8 p-5 rounded-2xl bg-red-500/20 border border-red-500/40 text-white">
                     <p class="font-medium mb-2">Controleer je invoer:</p>

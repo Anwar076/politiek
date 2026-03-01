@@ -24,6 +24,7 @@
                 <a href="{{ route('admin.events.index') }}" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-accent hover:bg-white/5 {{ request()->routeIs('admin.events.*') ? 'bg-white/10 text-accent' : '' }}">Agenda</a>
                 <a href="{{ route('admin.donations.index') }}" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-accent hover:bg-white/5 {{ request()->routeIs('admin.donations.*') ? 'bg-white/10 text-accent' : '' }}">Donaties</a>
                 <a href="{{ route('admin.volunteers.index') }}" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-accent hover:bg-white/5 {{ request()->routeIs('admin.volunteers.*') ? 'bg-white/10 text-accent' : '' }}">Vrijwilligers</a>
+                <a href="{{ route('admin.contact-messages.index') }}" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-accent hover:bg-white/5 {{ request()->routeIs('admin.contact-messages.*') ? 'bg-white/10 text-accent' : '' }}">Contactberichten</a>
             </nav>
             <div class="p-4 border-t border-white/10 space-y-1">
                 <a href="{{ route('home') }}" class="block py-2 text-white/60 hover:text-white text-sm">Naar website</a>

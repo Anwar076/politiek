@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactMessageController as AdminContactMessageController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\DonationController as AdminDonationController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
@@ -50,5 +51,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('donations', [AdminDonationController::class, 'index'])->name('donations.index');
         Route::get('volunteers', [AdminVolunteerController::class, 'index'])->name('volunteers.index');
         Route::post('volunteers/{volunteer}/processed', [AdminVolunteerController::class, 'markProcessed'])->name('volunteers.markProcessed');
+        Route::get('contact-messages', [AdminContactMessageController::class, 'index'])->name('contact-messages.index');
+        Route::post('contact-messages/{contact}/mark-unread', [AdminContactMessageController::class, 'markUnread'])->name('contact-messages.mark-unread');
     });
 });
