@@ -153,7 +153,11 @@
                         <a href="{{ route('volunteer') }}" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-6 py-3 rounded-lg text-sm md:text-base transition-colors">
                             Word vrijwilliger
                         </a>
-                        <a href="{{ route('programma') }}" class="inline-flex items-center justify-center gap-2 bg-white text-marine hover:bg-white/90 font-bold px-6 py-3 rounded-none text-sm md:text-base transition-colors border-2 border-white">
+                        <a
+                            href="{{ asset('files/DEFVerkiezingsprogramma_Samen_voor_Barendrecht_Lijst8_2026.pdf') }}"
+                            download
+                            class="inline-flex items-center justify-center gap-2 bg-white text-marine hover:bg-white/90 font-bold px-6 py-3 rounded-none text-sm md:text-base transition-colors border-2 border-white"
+                        >
                             Download het programma
                         </a>
                         

@@ -13,7 +13,7 @@
                     Het volledige verkiezingsprogramma van Samen voor Barendrecht voor de gemeenteraadsverkiezingen van 18 maart 2026.
                 </p>
                 <div class="mt-6">
-                    <a href="#" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-lg text-base transition-colors">
+                    <a href="{{ asset('files/DEFVerkiezingsprogramma_Samen_voor_Barendrecht_Lijst8_2026.pdf') }}" download class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-lg text-base transition-colors">
                         <i class="fa-solid fa-download"></i>
                         Download het volledige programma (PDF)
                     </a>
@@ -89,7 +89,7 @@
     {{-- CTA: Download + standpunten --}}
     <section class="py-12 md:py-16 bg-marine-light/20 border-t border-white/10">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6 text-center space-y-6">
-            <a href="#" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-lg text-base transition-colors">
+            <a href="{{ asset('files/DEFVerkiezingsprogramma_Samen_voor_Barendrecht_Lijst8_2026.pdf') }}" download class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-lg text-base transition-colors">
                 <i class="fa-solid fa-download"></i>
                 Download het volledige programma (PDF)
             </a>

@@ -135,7 +135,11 @@
 
             {{-- CTA: Download programma --}}
             <div class="mt-16 text-center">
-                <a href="{{ route('programma') }}" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-xl text-base transition-colors">
+                <a
+                    href="{{ asset('files/DEFVerkiezingsprogramma_Samen_voor_Barendrecht_Lijst8_2026.pdf') }}"
+                    download
+                    class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-marine font-bold px-8 py-4 rounded-xl text-base transition-colors"
+                >
                     <i class="fa-solid fa-download"></i>
                     Download het volledige programma (PDF)
                 </a>
