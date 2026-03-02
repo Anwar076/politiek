@@ -1,19 +1,24 @@
 @props([
     'title',
     'subtitle' => null,
-    'image' => 'https://images.unsplash.com/photo-1540914129891-4b0c2c4e2c8e?w=1920&q=80',
+    'image' => null,
     'imagePosition' => 'center center',
     'ctaText' => null,
     'ctaUrl' => null,
 ])
 
 <section class="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0">
-@if($image)
-<img src="{{ $image }}" alt="" class="w-full h-full object-cover scale-105 animate-slow-zoom" style="object-position: {{ $imagePosition }}">
-@endif
-<div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
-</div>
+    <div class="absolute inset-0">
+        @if($image)
+            <img
+                src="{{ $image }}"
+                alt=""
+                class="w-full h-full object-cover scale-105 animate-slow-zoom"
+                style="object-position: {{ $imagePosition }}"
+            >
+        @endif
+        <div class="absolute inset-0 bg-gradient-to-b from-marine/90 via-marine/85 to-marine/95"></div>
+    </div>
     <div class="relative z-10 w-full min-w-0 max-w-[1200px] mx-auto px-5 sm:px-6 text-center py-12 sm:py-16 md:py-20 lg:py-28">
         <div class="h-1 w-20 bg-accent mx-auto mb-4 sm:mb-6 rounded-full"></div>
         <h1 class="max-sm:text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-tight uppercase drop-shadow-lg break-words">

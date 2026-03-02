@@ -2,7 +2,6 @@
     <x-hero-section
         title="Verkiezingsprogramma 2026"
         subtitle="11 thema's. 5 meetbare doelen. 3 speerpunten."
-        :image="null"
     />
 
     {{-- Ons programma intro + download (prominent) --}}
