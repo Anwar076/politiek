@@ -4,18 +4,50 @@
         subtitle="Betrokken Barendrechters. Geen beroepspolitici."
     />
 
+    <div x-data="{ lightbox: null }" @keydown.escape.window="lightbox = null">
     {{-- Ons team intro --}}
     <section class="py-10 md:py-14">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <h2 class="text-xl md:text-2xl font-extrabold text-white">Ons team</h2>
-            <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
-                Samen Barendrecht wordt gedragen door betrokken Barendrechters met diverse achtergronden.
-                Wij zijn geen beroepspolitici <span class="text-em-dash">—</span> wij zijn uw buren, collega's en medeouders op het schoolplein.
-            </p>
+            <div class="grid lg:grid-cols-[1.2fr_minmax(0,1fr)] gap-8 lg:gap-10 items-center">
+                <div>
+                    <h2 class="text-xl md:text-2xl font-extrabold text-white">Ons team</h2>
+                    <p class="mt-3 text-white/85 text-sm md:text-base leading-relaxed max-w-2xl">
+                        Samen Barendrecht wordt gedragen door betrokken Barendrechters met diverse achtergronden.
+                        Wij zijn geen beroepspolitici <span class="text-em-dash">—</span> wij zijn uw buren, collega's en medeouders op het schoolplein.
+                    </p>
+                </div>
+                <div class="mt-6 lg:mt-0">
+                    @php
+                        $groepsfoto = asset('images/' . rawurlencode('Groepsfoto.jpeg'));
+                    @endphp
+                    <button
+                        type="button"
+                        @click="lightbox = { src: '{{ $groepsfoto }}', naam: 'Groepsfoto – Samen voor Barendrecht' }"
+                        class="block w-full text-left rounded-2xl overflow-hidden border border-white/15 bg-marine-light/40 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 transition-all group focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-marine"
+                        aria-label="Vergroot de groepsfoto van het team"
+                    >
+                        <div class="relative aspect-[16/9] overflow-hidden">
+                            <img
+                                src="{{ $groepsfoto }}"
+                                alt="Groepsfoto van de kandidaten van Samen voor Barendrecht"
+                                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-marine/70 via-marine/20 to-transparent pointer-events-none"></div>
+                            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between gap-3 text-xs md:text-sm">
+                                <span class="text-white font-semibold drop-shadow">
+                                    Het team van Samen voor Barendrecht
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/60 text-white/90 font-semibold">
+                                    <i class="fa-solid fa-search-plus text-xs"></i>
+                                    <span>Vergroot</span>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
-
-    <div x-data="{ lightbox: null }" @keydown.escape.window="lightbox = null">
         {{-- Lijsttrekker: Cihat Demir --}}
         @php
             $demirFoto = asset('images/' . rawurlencode('Demir, C. (Cihat).png'));
