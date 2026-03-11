@@ -31,6 +31,10 @@ class ContactMessageController extends Controller
     {
         $contact->update(['read' => false]);
 
-        return back()->with('success', 'Bericht gemarkeerd als ongelezen.');
+        // Ga terug naar de overzichtspagina zonder specifiek bericht geopend,
+        // zodat het bericht niet direct weer als gelezen wordt gemarkeerd.
+        return redirect()
+            ->route('admin.contact-messages.index')
+            ->with('success', 'Bericht gemarkeerd als ongelezen.');
     }
 }
