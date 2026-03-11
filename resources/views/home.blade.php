@@ -51,6 +51,31 @@
         </div>
     </section>
 
+    {{-- Groepsfoto team --}}
+    <section class="py-8 md:py-12">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="rounded-2xl overflow-hidden border border-white/10 bg-marine-light/30">
+                <div class="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+                    <img
+                        src="{{ asset('images/' . rawurlencode('Groepsfoto.jpeg')) }}"
+                        alt="Groepsfoto van het team van Samen voor Barendrecht"
+                        class="w-full h-full object-cover object-center"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-marine/60 via-marine/10 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-3 left-4 right-4 flex flex-wrap items-center justify-between gap-2 text-xs md:text-sm">
+                        <span class="text-white font-semibold drop-shadow">
+                            Het campagneteam van Samen voor Barendrecht
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/60 text-white/90 font-semibold">
+                            <i class="fa-solid fa-users text-xs"></i>
+                            <span>Lijst 8</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- Eerlijk bestuur: drie speerpunten --}}
     <section class="py-12 md:py-16 bg-marine-light/20">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
